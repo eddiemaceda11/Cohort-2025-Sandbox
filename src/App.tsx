@@ -2,6 +2,22 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const [expiration, setExpiration] = useState<number>(10);
+
+  useEffect(() => {
+    const timeInt = setInterval(() => {
+      setExpiration((prevState) => {
+        if (prevState <= 0) {
+          return 0;
+        }
+        console.log(expiration);
+        return prevState - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timeInt);
+  }, [expiration]);
+
   return (
     <>
       {/* GUEST MANAGEMENT */}
