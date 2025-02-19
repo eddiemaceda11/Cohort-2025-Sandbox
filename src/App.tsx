@@ -18,6 +18,17 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="parking-passes">
+        <h2>Parking Passes</h2>
+        <div>
+          <div className="parking-pass">
+            <p>John Doe</p>
+            <p>In use</p>
+            <p>Expires in 3 days</p>
+          </div>
+        </div>
+        <button>Start countdown</button>
+      </div>
     </>
   );
 }
