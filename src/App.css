@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+/* GUEST */
+.guest-info {
+  display: flex;
+  border: 1px solid whitesmoke;
+  align-items: center;
+  justify-content: space-around;
+}
