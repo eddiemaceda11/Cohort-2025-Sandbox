@@ -10,11 +10,9 @@ function App() {
         if (prevState <= 0) {
           return 0;
         }
-        console.log(expiration);
         return prevState - 1;
       });
     }, 1000);
-
     return () => clearInterval(timeInt);
   }, [expiration]);
 
